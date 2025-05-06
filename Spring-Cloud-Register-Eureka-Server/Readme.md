@@ -8,7 +8,7 @@ Register MicroService in Eureka Server
 3) Start the Consumer Application (PaymentService)
 
 4) Click on Payment Service link on Eureka screen
-It will be like : http://192.168.0.7:8989/actuator/info
+It will be like : http://localhost:8989/actuator/info
 
 5) Modify URL path as: ‘/payment/data’ in place of ‘/actuator/info’ and hit Enter.
-http://192.168.0.7:8989/payment/data
+http://localhost:8989/payment/data
