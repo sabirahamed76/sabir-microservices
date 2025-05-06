@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: LISTING-SERVICE
+  profiles:
+    active: native
+  config:
+    import: 'optional:configserver:http://localhost:8088'

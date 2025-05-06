@@ -4541,3 +4541,305 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2025-05-06 19:56:33.539  INFO 14808 --- [RMI TCP Connection(9)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
 2025-05-06 19:56:33.548  INFO 14808 --- [RMI TCP Connection(9)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
 2025-05-06 19:56:33.549  INFO 14808 --- [RMI TCP Connection(9)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-05-06 22:29:50.685  INFO 26704 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2025-05-06 22:29:50.793  INFO 26704 --- [main] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2025-05-06 22:29:50.794  WARN 26704 --- [main] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/PAYMENT-SERVICE/default": Connection refused: getsockopt; nested exception is java.net.ConnectException: Connection refused: getsockopt
+2025-05-06 22:29:50.797  INFO 26704 --- [main] c.h.s.m.S.EurekaClientPaymentApplication : No active profile set, falling back to default profiles: default
+2025-05-06 22:29:51.328  INFO 26704 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2a40f68a-4d3a-3730-84f7-dff66f888091
+2025-05-06 22:29:51.587  INFO 26704 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8990 (http)
+2025-05-06 22:29:51.598  INFO 26704 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-06 22:29:51.599  INFO 26704 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2025-05-06 22:29:51.734  INFO 26704 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-06 22:29:51.734  INFO 26704 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 918 ms
+2025-05-06 22:29:52.049  WARN 26704 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2025-05-06 22:29:52.050  INFO 26704 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2025-05-06 22:29:52.053  WARN 26704 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2025-05-06 22:29:52.054  INFO 26704 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2025-05-06 22:29:52.172  INFO 26704 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2025-05-06 22:29:52.241  WARN 26704 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2025-05-06 22:29:52.324  INFO 26704 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-05-06 22:29:52.357  INFO 26704 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-05-06 22:29:52.531  INFO 26704 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2025-05-06 22:29:52.532  INFO 26704 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2025-05-06 22:29:52.733  INFO 26704 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2025-05-06 22:29:52.733  INFO 26704 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2025-05-06 22:29:52.832  INFO 26704 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-06 22:29:52.833 DEBUG 26704 --- [main] c.n.discovery.endpoint.EndpointUtils     : The availability zone for the given region us-east-1 are [defaultZone]
+2025-05-06 22:29:52.834 DEBUG 26704 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Config resolved to [AwsEndpoint{ serviceUrl='http://localhost:8761/eureka/', region='us-east-1', zone='defaultZone'}]
+2025-05-06 22:29:52.834 DEBUG 26704 --- [main] c.n.d.s.r.a.ZoneAffinityClusterResolver  : Local zone=defaultZone; resolved to: [AwsEndpoint{ serviceUrl='http://localhost:8761/eureka/', region='us-east-1', zone='defaultZone'}]
+2025-05-06 22:29:52.851  INFO 26704 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-05-06 22:29:52.852  INFO 26704 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-05-06 22:29:52.852  INFO 26704 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-05-06 22:29:52.852  INFO 26704 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-05-06 22:29:52.852  INFO 26704 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-05-06 22:29:52.852  INFO 26704 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-05-06 22:29:52.852  INFO 26704 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-05-06 22:29:52.853 DEBUG 26704 --- [main] c.n.d.s.t.d.SessionedEurekaHttpClient    : Ending a session and starting anew
+2025-05-06 22:29:52.855 DEBUG 26704 --- [main] n.d.s.t.j.AbstractJerseyEurekaHttpClient : Created client for url: http://localhost:8761/eureka/
+2025-05-06 22:29:52.888 DEBUG 26704 --- [main] c.n.d.shared.MonitoredConnectionManager  : Get connection: {}->http://localhost:8761, timeout = 5000
+2025-05-06 22:29:52.889 DEBUG 26704 --- [main] c.n.d.shared.NamedConnectionPool         : [{}->http://localhost:8761] total kept alive: 0, total issued: 0, total allocated: 0 out of 200
+2025-05-06 22:29:52.889 DEBUG 26704 --- [main] c.n.d.shared.NamedConnectionPool         : No free connections [{}->http://localhost:8761][null]
+2025-05-06 22:29:52.889 DEBUG 26704 --- [main] c.n.d.shared.NamedConnectionPool         : Available capacity: 50 out of 50 [{}->http://localhost:8761][null]
+2025-05-06 22:29:52.890 DEBUG 26704 --- [main] c.n.d.shared.NamedConnectionPool         : Creating new connection [{}->http://localhost:8761]
+2025-05-06 22:29:52.933 DEBUG 26704 --- [main] c.n.d.shared.MonitoredConnectionManager  : Released connection is reusable.
+2025-05-06 22:29:52.933 DEBUG 26704 --- [main] c.n.d.shared.NamedConnectionPool         : Releasing connection [{}->http://localhost:8761][null]
+2025-05-06 22:29:52.933 DEBUG 26704 --- [main] c.n.d.shared.NamedConnectionPool         : Pooling connection [{}->http://localhost:8761][null]; keep alive for 60000 MILLISECONDS
+2025-05-06 22:29:52.933 DEBUG 26704 --- [main] c.n.d.shared.NamedConnectionPool         : Notifying no-one, there are no waiting threads
+2025-05-06 22:29:52.934 DEBUG 26704 --- [main] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-05-06 22:29:52.934 DEBUG 26704 --- [main] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-05-06 22:29:52.935 DEBUG 26704 --- [main] n.d.s.t.j.AbstractJerseyEurekaHttpClient : Jersey HTTP GET http://localhost:8761/eureka//apps/?; statusCode=200
+2025-05-06 22:29:52.935 DEBUG 26704 --- [main] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Pinning to endpoint null
+2025-05-06 22:29:52.935  INFO 26704 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-05-06 22:29:52.935 DEBUG 26704 --- [main] com.netflix.discovery.DiscoveryClient    : Got full registry with apps hashcode 
+2025-05-06 22:29:52.935 DEBUG 26704 --- [main] com.netflix.discovery.DiscoveryClient    : The total number of all instances in the client now is 0
+2025-05-06 22:29:52.937  INFO 26704 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-05-06 22:29:52.939  INFO 26704 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-05-06 22:29:52.942  INFO 26704 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1746541792940 with initial instances count: 0
+2025-05-06 22:29:52.944  INFO 26704 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYMENT-SERVICE with eureka with status UP
+2025-05-06 22:29:52.944  INFO 26704 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1746541792944, current=UP, previous=STARTING]
+2025-05-06 22:29:52.945 DEBUG 26704 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.discovery.InstanceInfoReplicator     : Executing on-demand update of local InstanceInfo
+2025-05-06 22:29:52.945 DEBUG 26704 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.discovery.InstanceInfoReplicator     : Canceling the latest scheduled update, it will be rescheduled at the end of on demand update
+2025-05-06 22:29:52.947  INFO 26704 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/SABIR-HOME:PAYMENT-SERVICE:8990: registering service...
+2025-05-06 22:29:52.947 DEBUG 26704 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.SessionedEurekaHttpClient    : Ending a session and starting anew
+2025-05-06 22:29:52.948 DEBUG 26704 --- [DiscoveryClient-InstanceInfoReplicator-0] n.d.s.t.j.AbstractJerseyEurekaHttpClient : Created client for url: http://localhost:8761/eureka/
+2025-05-06 22:29:52.950 DEBUG 26704 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.shared.MonitoredConnectionManager  : Get connection: {}->http://localhost:8761, timeout = 5000
+2025-05-06 22:29:52.950 DEBUG 26704 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.shared.NamedConnectionPool         : [{}->http://localhost:8761] total kept alive: 1, total issued: 0, total allocated: 1 out of 200
+2025-05-06 22:29:52.950 DEBUG 26704 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.shared.NamedConnectionPool         : Getting free connection [{}->http://localhost:8761][null]
+2025-05-06 22:29:52.987 DEBUG 26704 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.shared.MonitoredConnectionManager  : Released connection is reusable.
+2025-05-06 22:29:52.987 DEBUG 26704 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.shared.NamedConnectionPool         : Releasing connection [{}->http://localhost:8761][null]
+2025-05-06 22:29:52.988 DEBUG 26704 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.shared.NamedConnectionPool         : Pooling connection [{}->http://localhost:8761][null]; keep alive for 60000 MILLISECONDS
+2025-05-06 22:29:52.988 DEBUG 26704 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.shared.NamedConnectionPool         : Notifying no-one, there are no waiting threads
+2025-05-06 22:29:52.988 DEBUG 26704 --- [DiscoveryClient-InstanceInfoReplicator-0] n.d.s.t.j.AbstractJerseyEurekaHttpClient : Jersey HTTP POST http://localhost:8761/eureka//apps/PAYMENT-SERVICE with instance SABIR-HOME:PAYMENT-SERVICE:8990; statusCode=204
+2025-05-06 22:29:52.988 DEBUG 26704 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Pinning to endpoint null
+2025-05-06 22:29:52.988  INFO 26704 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/SABIR-HOME:PAYMENT-SERVICE:8990 - registration status: 204
+2025-05-06 22:29:52.991  INFO 26704 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8990 (http) with context path ''
+2025-05-06 22:29:52.992  INFO 26704 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8990
+2025-05-06 22:29:52.998  INFO 26704 --- [main] c.h.s.m.S.EurekaClientPaymentApplication : Started EurekaClientPaymentApplication in 3.144 seconds (JVM running for 3.751)
+2025-05-06 22:30:22.823 DEBUG 26704 --- [Apache-HttpClient-Conn-Cleaner2] c.n.d.shared.MonitoredConnectionManager  : Closing connections idle longer than 30 SECONDS
+2025-05-06 22:30:22.823 DEBUG 26704 --- [Apache-HttpClient-Conn-Cleaner2] c.n.d.shared.NamedConnectionPool         : Closing connections idle longer than 30 SECONDS
+2025-05-06 22:30:22.946  INFO 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-05-06 22:30:22.946  INFO 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-05-06 22:30:22.946  INFO 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-05-06 22:30:22.946  INFO 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-05-06 22:30:22.947  INFO 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-05-06 22:30:22.947  INFO 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2025-05-06 22:30:22.947  INFO 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-05-06 22:30:22.947 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.shared.MonitoredConnectionManager  : Get connection: {}->http://localhost:8761, timeout = 5000
+2025-05-06 22:30:22.947 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.shared.NamedConnectionPool         : [{}->http://localhost:8761] total kept alive: 1, total issued: 0, total allocated: 1 out of 200
+2025-05-06 22:30:22.947 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.shared.NamedConnectionPool         : Getting free connection [{}->http://localhost:8761][null]
+2025-05-06 22:30:22.947 DEBUG 26704 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.shared.MonitoredConnectionManager  : Get connection: {}->http://localhost:8761, timeout = 5000
+2025-05-06 22:30:22.947 DEBUG 26704 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : [{}->http://localhost:8761] total kept alive: 0, total issued: 1, total allocated: 1 out of 200
+2025-05-06 22:30:22.947 DEBUG 26704 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : No free connections [{}->http://localhost:8761][null]
+2025-05-06 22:30:22.947 DEBUG 26704 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : Available capacity: 49 out of 50 [{}->http://localhost:8761][null]
+2025-05-06 22:30:22.947 DEBUG 26704 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : Creating new connection [{}->http://localhost:8761]
+2025-05-06 22:30:22.954 DEBUG 26704 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.shared.MonitoredConnectionManager  : Released connection is reusable.
+2025-05-06 22:30:22.954 DEBUG 26704 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : Releasing connection [{}->http://localhost:8761][null]
+2025-05-06 22:30:22.954 DEBUG 26704 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : Pooling connection [{}->http://localhost:8761][null]; keep alive for 60000 MILLISECONDS
+2025-05-06 22:30:22.954 DEBUG 26704 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : Notifying no-one, there are no waiting threads
+2025-05-06 22:30:22.954 DEBUG 26704 --- [DiscoveryClient-HeartbeatExecutor-0] n.d.s.t.j.AbstractJerseyEurekaHttpClient : Jersey HTTP PUT http://localhost:8761/eureka//apps/PAYMENT-SERVICE/SABIR-HOME:PAYMENT-SERVICE:8990; statusCode=200
+2025-05-06 22:30:22.955 DEBUG 26704 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/SABIR-HOME:PAYMENT-SERVICE:8990 - Heartbeat status: 200
+2025-05-06 22:30:22.976 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.shared.MonitoredConnectionManager  : Released connection is reusable.
+2025-05-06 22:30:22.976 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.shared.NamedConnectionPool         : Releasing connection [{}->http://localhost:8761][null]
+2025-05-06 22:30:22.976 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.shared.NamedConnectionPool         : Pooling connection [{}->http://localhost:8761][null]; keep alive for 60000 MILLISECONDS
+2025-05-06 22:30:22.976 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.shared.NamedConnectionPool         : Notifying no-one, there are no waiting threads
+2025-05-06 22:30:22.977 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 2
+2025-05-06 22:30:22.977 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 10
+2025-05-06 22:30:22.977 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] n.d.s.t.j.AbstractJerseyEurekaHttpClient : Jersey HTTP GET http://localhost:8761/eureka//apps/?; statusCode=200
+2025-05-06 22:30:22.977  INFO 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-05-06 22:30:22.977 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Got full registry with apps hashcode UP_1_
+2025-05-06 22:30:22.977 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The total number of all instances in the client now is 1
+2025-05-06 22:30:22.978 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Completed cache refresh task for discovery. All Apps hash code is Local region apps hashcode: UP_1_, is fetching remote regions? false 
+2025-05-06 22:30:52.836 DEBUG 26704 --- [Apache-HttpClient-Conn-Cleaner2] c.n.d.shared.MonitoredConnectionManager  : Closing connections idle longer than 30 SECONDS
+2025-05-06 22:30:52.836 DEBUG 26704 --- [Apache-HttpClient-Conn-Cleaner2] c.n.d.shared.NamedConnectionPool         : Closing connections idle longer than 30 SECONDS
+2025-05-06 22:30:52.970 DEBUG 26704 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.shared.MonitoredConnectionManager  : Get connection: {}->http://localhost:8761, timeout = 5000
+2025-05-06 22:30:52.971 DEBUG 26704 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : [{}->http://localhost:8761] total kept alive: 2, total issued: 0, total allocated: 2 out of 200
+2025-05-06 22:30:52.971 DEBUG 26704 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : Getting free connection [{}->http://localhost:8761][null]
+2025-05-06 22:30:52.987 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.shared.MonitoredConnectionManager  : Get connection: {}->http://localhost:8761, timeout = 5000
+2025-05-06 22:30:52.987 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.shared.NamedConnectionPool         : [{}->http://localhost:8761] total kept alive: 1, total issued: 1, total allocated: 2 out of 200
+2025-05-06 22:30:52.987 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.shared.NamedConnectionPool         : Getting free connection [{}->http://localhost:8761][null]
+2025-05-06 22:30:52.992 DEBUG 26704 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.shared.MonitoredConnectionManager  : Released connection is reusable.
+2025-05-06 22:30:52.992 DEBUG 26704 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : Releasing connection [{}->http://localhost:8761][null]
+2025-05-06 22:30:52.992 DEBUG 26704 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : Pooling connection [{}->http://localhost:8761][null]; keep alive for 60000 MILLISECONDS
+2025-05-06 22:30:52.992 DEBUG 26704 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : Notifying no-one, there are no waiting threads
+2025-05-06 22:30:52.992 DEBUG 26704 --- [DiscoveryClient-HeartbeatExecutor-0] n.d.s.t.j.AbstractJerseyEurekaHttpClient : Jersey HTTP PUT http://localhost:8761/eureka//apps/PAYMENT-SERVICE/SABIR-HOME:PAYMENT-SERVICE:8990; statusCode=200
+2025-05-06 22:30:52.992 DEBUG 26704 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/SABIR-HOME:PAYMENT-SERVICE:8990 - Heartbeat status: 200
+2025-05-06 22:30:53.007 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.shared.MonitoredConnectionManager  : Released connection is reusable.
+2025-05-06 22:30:53.007 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.shared.NamedConnectionPool         : Releasing connection [{}->http://localhost:8761][null]
+2025-05-06 22:30:53.007 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.shared.NamedConnectionPool         : Pooling connection [{}->http://localhost:8761][null]; keep alive for 60000 MILLISECONDS
+2025-05-06 22:30:53.007 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.shared.NamedConnectionPool         : Notifying no-one, there are no waiting threads
+2025-05-06 22:30:53.007 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 2
+2025-05-06 22:30:53.007 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 10
+2025-05-06 22:30:53.007 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] n.d.s.t.j.AbstractJerseyEurekaHttpClient : Jersey HTTP GET http://localhost:8761/eureka//apps/delta?; statusCode=200
+2025-05-06 22:30:53.007 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Got delta update with apps hashcode UP_1_
+2025-05-06 22:30:53.008 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Added instance SABIR-HOME:PAYMENT-SERVICE:8990 to the existing apps in region null
+2025-05-06 22:30:53.008 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The total number of instances fetched by the delta processor : 1
+2025-05-06 22:30:53.009 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The total number of all instances in the client now is 1
+2025-05-06 22:30:53.009 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Completed cache refresh task for discovery. All Apps hash code is Local region apps hashcode: UP_1_, is fetching remote regions? false 
+2025-05-06 22:31:22.850 DEBUG 26704 --- [Apache-HttpClient-Conn-Cleaner2] c.n.d.shared.MonitoredConnectionManager  : Closing connections idle longer than 30 SECONDS
+2025-05-06 22:31:22.851 DEBUG 26704 --- [Apache-HttpClient-Conn-Cleaner2] c.n.d.shared.NamedConnectionPool         : Closing connections idle longer than 30 SECONDS
+2025-05-06 22:31:23.005 DEBUG 26704 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.shared.MonitoredConnectionManager  : Get connection: {}->http://localhost:8761, timeout = 5000
+2025-05-06 22:31:23.006 DEBUG 26704 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : [{}->http://localhost:8761] total kept alive: 2, total issued: 0, total allocated: 2 out of 200
+2025-05-06 22:31:23.006 DEBUG 26704 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : Getting free connection [{}->http://localhost:8761][null]
+2025-05-06 22:31:23.021 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.shared.MonitoredConnectionManager  : Get connection: {}->http://localhost:8761, timeout = 5000
+2025-05-06 22:31:23.022 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.shared.NamedConnectionPool         : [{}->http://localhost:8761] total kept alive: 1, total issued: 1, total allocated: 2 out of 200
+2025-05-06 22:31:23.022 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.shared.NamedConnectionPool         : Getting free connection [{}->http://localhost:8761][null]
+2025-05-06 22:31:23.027 DEBUG 26704 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.shared.MonitoredConnectionManager  : Released connection is reusable.
+2025-05-06 22:31:23.028 DEBUG 26704 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : Releasing connection [{}->http://localhost:8761][null]
+2025-05-06 22:31:23.028 DEBUG 26704 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : Pooling connection [{}->http://localhost:8761][null]; keep alive for 60000 MILLISECONDS
+2025-05-06 22:31:23.028 DEBUG 26704 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : Notifying no-one, there are no waiting threads
+2025-05-06 22:31:23.028 DEBUG 26704 --- [DiscoveryClient-HeartbeatExecutor-0] n.d.s.t.j.AbstractJerseyEurekaHttpClient : Jersey HTTP PUT http://localhost:8761/eureka//apps/PAYMENT-SERVICE/SABIR-HOME:PAYMENT-SERVICE:8990; statusCode=200
+2025-05-06 22:31:23.028 DEBUG 26704 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/SABIR-HOME:PAYMENT-SERVICE:8990 - Heartbeat status: 200
+2025-05-06 22:31:23.039 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.shared.MonitoredConnectionManager  : Released connection is reusable.
+2025-05-06 22:31:23.039 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.shared.NamedConnectionPool         : Releasing connection [{}->http://localhost:8761][null]
+2025-05-06 22:31:23.039 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.shared.NamedConnectionPool         : Pooling connection [{}->http://localhost:8761][null]; keep alive for 60000 MILLISECONDS
+2025-05-06 22:31:23.039 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.shared.NamedConnectionPool         : Notifying no-one, there are no waiting threads
+2025-05-06 22:31:23.039 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 2
+2025-05-06 22:31:23.040 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 10
+2025-05-06 22:31:23.040 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] n.d.s.t.j.AbstractJerseyEurekaHttpClient : Jersey HTTP GET http://localhost:8761/eureka//apps/delta?; statusCode=200
+2025-05-06 22:31:23.040 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Got delta update with apps hashcode UP_1_
+2025-05-06 22:31:23.040 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Added instance SABIR-HOME:PAYMENT-SERVICE:8990 to the existing apps in region null
+2025-05-06 22:31:23.040 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The total number of instances fetched by the delta processor : 1
+2025-05-06 22:31:23.040 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The total number of all instances in the client now is 1
+2025-05-06 22:31:23.040 DEBUG 26704 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Completed cache refresh task for discovery. All Apps hash code is Local region apps hashcode: UP_1_, is fetching remote regions? false 
+2025-05-06 22:31:24.778  INFO 26704 --- [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-05-06 22:31:24.779  INFO 26704 --- [RMI TCP Connection(11)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PAYMENT-SERVICE with eureka with status DOWN
+2025-05-06 22:31:24.779  INFO 26704 --- [RMI TCP Connection(11)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1746541884779, current=DOWN, previous=UP]
+2025-05-06 22:31:24.779 DEBUG 26704 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.discovery.InstanceInfoReplicator     : Executing on-demand update of local InstanceInfo
+2025-05-06 22:31:24.779 DEBUG 26704 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.discovery.InstanceInfoReplicator     : Canceling the latest scheduled update, it will be rescheduled at the end of on demand update
+2025-05-06 22:31:24.779  INFO 26704 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/SABIR-HOME:PAYMENT-SERVICE:8990: registering service...
+2025-05-06 22:31:24.780 DEBUG 26704 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.shared.MonitoredConnectionManager  : Get connection: {}->http://localhost:8761, timeout = 5000
+2025-05-06 22:31:24.780 DEBUG 26704 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.shared.NamedConnectionPool         : [{}->http://localhost:8761] total kept alive: 2, total issued: 0, total allocated: 2 out of 200
+2025-05-06 22:31:24.780 DEBUG 26704 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.shared.NamedConnectionPool         : Getting free connection [{}->http://localhost:8761][null]
+2025-05-06 22:31:24.794  INFO 26704 --- [RMI TCP Connection(11)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-05-06 22:31:24.797 DEBUG 26704 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.shared.MonitoredConnectionManager  : Released connection is reusable.
+2025-05-06 22:31:24.797 DEBUG 26704 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.shared.NamedConnectionPool         : Releasing connection [{}->http://localhost:8761][null]
+2025-05-06 22:31:24.797 DEBUG 26704 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.shared.NamedConnectionPool         : Pooling connection [{}->http://localhost:8761][null]; keep alive for 60000 MILLISECONDS
+2025-05-06 22:31:24.797 DEBUG 26704 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.shared.NamedConnectionPool         : Notifying no-one, there are no waiting threads
+2025-05-06 22:31:24.797 DEBUG 26704 --- [DiscoveryClient-InstanceInfoReplicator-0] n.d.s.t.j.AbstractJerseyEurekaHttpClient : Jersey HTTP POST http://localhost:8761/eureka//apps/PAYMENT-SERVICE with instance SABIR-HOME:PAYMENT-SERVICE:8990; statusCode=204
+2025-05-06 22:31:24.797  INFO 26704 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/SABIR-HOME:PAYMENT-SERVICE:8990 - registration status: 204
+2025-05-06 22:31:24.798  INFO 26704 --- [RMI TCP Connection(11)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-05-06 22:31:24.799 DEBUG 26704 --- [RMI TCP Connection(11)-127.0.0.1] c.n.d.shared.MonitoredConnectionManager  : Get connection: {}->http://localhost:8761, timeout = 5000
+2025-05-06 22:31:24.799 DEBUG 26704 --- [RMI TCP Connection(11)-127.0.0.1] c.n.d.shared.NamedConnectionPool         : [{}->http://localhost:8761] total kept alive: 2, total issued: 0, total allocated: 2 out of 200
+2025-05-06 22:31:24.799 DEBUG 26704 --- [RMI TCP Connection(11)-127.0.0.1] c.n.d.shared.NamedConnectionPool         : Getting free connection [{}->http://localhost:8761][null]
+2025-05-06 22:31:24.810 DEBUG 26704 --- [RMI TCP Connection(11)-127.0.0.1] c.n.d.shared.MonitoredConnectionManager  : Released connection is reusable.
+2025-05-06 22:31:24.810 DEBUG 26704 --- [RMI TCP Connection(11)-127.0.0.1] c.n.d.shared.NamedConnectionPool         : Releasing connection [{}->http://localhost:8761][null]
+2025-05-06 22:31:24.810 DEBUG 26704 --- [RMI TCP Connection(11)-127.0.0.1] c.n.d.shared.NamedConnectionPool         : Pooling connection [{}->http://localhost:8761][null]; keep alive for 60000 MILLISECONDS
+2025-05-06 22:31:24.810 DEBUG 26704 --- [RMI TCP Connection(11)-127.0.0.1] c.n.d.shared.NamedConnectionPool         : Notifying no-one, there are no waiting threads
+2025-05-06 22:31:24.810 DEBUG 26704 --- [RMI TCP Connection(11)-127.0.0.1] n.d.s.t.j.AbstractJerseyEurekaHttpClient : Jersey HTTP DELETE http://localhost:8761/eureka//apps/PAYMENT-SERVICE/SABIR-HOME:PAYMENT-SERVICE:8990; statusCode=200
+2025-05-06 22:31:24.810  INFO 26704 --- [RMI TCP Connection(11)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/SABIR-HOME:PAYMENT-SERVICE:8990 - deregister  status: 200
+2025-05-06 22:31:24.816 DEBUG 26704 --- [RMI TCP Connection(11)-127.0.0.1] c.n.d.shared.MonitoredConnectionManager  : Closing connections idle longer than 0 SECONDS
+2025-05-06 22:31:24.816 DEBUG 26704 --- [RMI TCP Connection(11)-127.0.0.1] c.n.d.shared.NamedConnectionPool         : Closing connections idle longer than 0 SECONDS
+2025-05-06 22:31:24.816 DEBUG 26704 --- [RMI TCP Connection(11)-127.0.0.1] c.n.d.shared.NamedConnectionPool         : Closing connection last used @ Tue May 06 22:31:23 SGT 2025
+2025-05-06 22:31:24.816 DEBUG 26704 --- [RMI TCP Connection(11)-127.0.0.1] c.n.d.shared.NamedConnectionPool         : Deleting connection [{}->http://localhost:8761][null]
+2025-05-06 22:31:24.817 DEBUG 26704 --- [RMI TCP Connection(11)-127.0.0.1] c.n.d.shared.NamedConnectionPool         : Closing connection last used @ Tue May 06 22:31:24 SGT 2025
+2025-05-06 22:31:24.817 DEBUG 26704 --- [RMI TCP Connection(11)-127.0.0.1] c.n.d.shared.NamedConnectionPool         : Deleting connection [{}->http://localhost:8761][null]
+2025-05-06 22:31:24.817 DEBUG 26704 --- [RMI TCP Connection(11)-127.0.0.1] c.n.d.shared.MonitoredConnectionManager  : Shutting down
+2025-05-06 22:31:24.820  INFO 26704 --- [RMI TCP Connection(11)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-05-06 22:31:24.829  INFO 26704 --- [RMI TCP Connection(11)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-05-06 22:31:31.658  INFO 19016 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2025-05-06 22:31:31.763  INFO 19016 --- [main] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2025-05-06 22:31:31.763  WARN 19016 --- [main] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/PAYMENT-SERVICE/default": Connection refused: getsockopt; nested exception is java.net.ConnectException: Connection refused: getsockopt
+2025-05-06 22:31:31.767  INFO 19016 --- [main] c.h.s.m.S.EurekaClientPaymentApplication : No active profile set, falling back to default profiles: default
+2025-05-06 22:31:32.660  INFO 19016 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2a40f68a-4d3a-3730-84f7-dff66f888091
+2025-05-06 22:31:32.983  INFO 19016 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8990 (http)
+2025-05-06 22:31:32.992  INFO 19016 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-06 22:31:32.992  INFO 19016 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2025-05-06 22:31:33.120  INFO 19016 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-06 22:31:33.120  INFO 19016 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1330 ms
+2025-05-06 22:31:33.505  WARN 19016 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2025-05-06 22:31:33.505  INFO 19016 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2025-05-06 22:31:33.511  WARN 19016 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2025-05-06 22:31:33.511  INFO 19016 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2025-05-06 22:31:33.655  INFO 19016 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2025-05-06 22:31:33.732  WARN 19016 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2025-05-06 22:31:33.823  INFO 19016 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-05-06 22:31:33.854  INFO 19016 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-05-06 22:31:34.037  INFO 19016 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2025-05-06 22:31:34.038  INFO 19016 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2025-05-06 22:31:34.222  INFO 19016 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2025-05-06 22:31:34.222  INFO 19016 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2025-05-06 22:31:34.345  INFO 19016 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-06 22:31:34.348 DEBUG 19016 --- [main] c.n.discovery.endpoint.EndpointUtils     : The availability zone for the given region us-east-1 are [defaultZone]
+2025-05-06 22:31:34.349 DEBUG 19016 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Config resolved to [AwsEndpoint{ serviceUrl='http://localhost:8761/eureka/', region='us-east-1', zone='defaultZone'}]
+2025-05-06 22:31:34.350 DEBUG 19016 --- [main] c.n.d.s.r.a.ZoneAffinityClusterResolver  : Local zone=defaultZone; resolved to: [AwsEndpoint{ serviceUrl='http://localhost:8761/eureka/', region='us-east-1', zone='defaultZone'}]
+2025-05-06 22:31:34.364  INFO 19016 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-05-06 22:31:34.364  INFO 19016 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-05-06 22:31:34.364  INFO 19016 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-05-06 22:31:34.364  INFO 19016 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-05-06 22:31:34.364  INFO 19016 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-05-06 22:31:34.364  INFO 19016 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-05-06 22:31:34.364  INFO 19016 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-05-06 22:31:34.365 DEBUG 19016 --- [main] c.n.d.s.t.d.SessionedEurekaHttpClient    : Ending a session and starting anew
+2025-05-06 22:31:34.368 DEBUG 19016 --- [main] n.d.s.t.j.AbstractJerseyEurekaHttpClient : Created client for url: http://localhost:8761/eureka/
+2025-05-06 22:31:34.407 DEBUG 19016 --- [main] c.n.d.shared.MonitoredConnectionManager  : Get connection: {}->http://localhost:8761, timeout = 5000
+2025-05-06 22:31:34.407 DEBUG 19016 --- [main] c.n.d.shared.NamedConnectionPool         : [{}->http://localhost:8761] total kept alive: 0, total issued: 0, total allocated: 0 out of 200
+2025-05-06 22:31:34.408 DEBUG 19016 --- [main] c.n.d.shared.NamedConnectionPool         : No free connections [{}->http://localhost:8761][null]
+2025-05-06 22:31:34.408 DEBUG 19016 --- [main] c.n.d.shared.NamedConnectionPool         : Available capacity: 50 out of 50 [{}->http://localhost:8761][null]
+2025-05-06 22:31:34.408 DEBUG 19016 --- [main] c.n.d.shared.NamedConnectionPool         : Creating new connection [{}->http://localhost:8761]
+2025-05-06 22:31:34.459 DEBUG 19016 --- [main] c.n.d.shared.MonitoredConnectionManager  : Released connection is reusable.
+2025-05-06 22:31:34.459 DEBUG 19016 --- [main] c.n.d.shared.NamedConnectionPool         : Releasing connection [{}->http://localhost:8761][null]
+2025-05-06 22:31:34.460 DEBUG 19016 --- [main] c.n.d.shared.NamedConnectionPool         : Pooling connection [{}->http://localhost:8761][null]; keep alive for 60000 MILLISECONDS
+2025-05-06 22:31:34.460 DEBUG 19016 --- [main] c.n.d.shared.NamedConnectionPool         : Notifying no-one, there are no waiting threads
+2025-05-06 22:31:34.461 DEBUG 19016 --- [main] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-05-06 22:31:34.461 DEBUG 19016 --- [main] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-05-06 22:31:34.462 DEBUG 19016 --- [main] n.d.s.t.j.AbstractJerseyEurekaHttpClient : Jersey HTTP GET http://localhost:8761/eureka//apps/?; statusCode=200
+2025-05-06 22:31:34.462 DEBUG 19016 --- [main] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Pinning to endpoint null
+2025-05-06 22:31:34.462  INFO 19016 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-05-06 22:31:34.463 DEBUG 19016 --- [main] com.netflix.discovery.DiscoveryClient    : Got full registry with apps hashcode 
+2025-05-06 22:31:34.463 DEBUG 19016 --- [main] com.netflix.discovery.DiscoveryClient    : The total number of all instances in the client now is 0
+2025-05-06 22:31:34.465  INFO 19016 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-05-06 22:31:34.468  INFO 19016 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-05-06 22:31:34.472  INFO 19016 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1746541894470 with initial instances count: 0
+2025-05-06 22:31:34.473  INFO 19016 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYMENT-SERVICE with eureka with status UP
+2025-05-06 22:31:34.474  INFO 19016 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1746541894474, current=UP, previous=STARTING]
+2025-05-06 22:31:34.474 DEBUG 19016 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.discovery.InstanceInfoReplicator     : Executing on-demand update of local InstanceInfo
+2025-05-06 22:31:34.474 DEBUG 19016 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.discovery.InstanceInfoReplicator     : Canceling the latest scheduled update, it will be rescheduled at the end of on demand update
+2025-05-06 22:31:34.475  INFO 19016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/SABIR-HOME:PAYMENT-SERVICE:8990: registering service...
+2025-05-06 22:31:34.475 DEBUG 19016 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.SessionedEurekaHttpClient    : Ending a session and starting anew
+2025-05-06 22:31:34.476 DEBUG 19016 --- [DiscoveryClient-InstanceInfoReplicator-0] n.d.s.t.j.AbstractJerseyEurekaHttpClient : Created client for url: http://localhost:8761/eureka/
+2025-05-06 22:31:34.479 DEBUG 19016 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.shared.MonitoredConnectionManager  : Get connection: {}->http://localhost:8761, timeout = 5000
+2025-05-06 22:31:34.479 DEBUG 19016 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.shared.NamedConnectionPool         : [{}->http://localhost:8761] total kept alive: 1, total issued: 0, total allocated: 1 out of 200
+2025-05-06 22:31:34.479 DEBUG 19016 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.shared.NamedConnectionPool         : Getting free connection [{}->http://localhost:8761][null]
+2025-05-06 22:31:34.510 DEBUG 19016 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.shared.MonitoredConnectionManager  : Released connection is reusable.
+2025-05-06 22:31:34.510 DEBUG 19016 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.shared.NamedConnectionPool         : Releasing connection [{}->http://localhost:8761][null]
+2025-05-06 22:31:34.510 DEBUG 19016 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.shared.NamedConnectionPool         : Pooling connection [{}->http://localhost:8761][null]; keep alive for 60000 MILLISECONDS
+2025-05-06 22:31:34.510 DEBUG 19016 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.shared.NamedConnectionPool         : Notifying no-one, there are no waiting threads
+2025-05-06 22:31:34.511 DEBUG 19016 --- [DiscoveryClient-InstanceInfoReplicator-0] n.d.s.t.j.AbstractJerseyEurekaHttpClient : Jersey HTTP POST http://localhost:8761/eureka//apps/PAYMENT-SERVICE with instance SABIR-HOME:PAYMENT-SERVICE:8990; statusCode=204
+2025-05-06 22:31:34.511 DEBUG 19016 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Pinning to endpoint null
+2025-05-06 22:31:34.511  INFO 19016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/SABIR-HOME:PAYMENT-SERVICE:8990 - registration status: 204
+2025-05-06 22:31:34.513  INFO 19016 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8990 (http) with context path ''
+2025-05-06 22:31:34.513  INFO 19016 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8990
+2025-05-06 22:31:34.519  INFO 19016 --- [main] c.h.s.m.S.EurekaClientPaymentApplication : Started EurekaClientPaymentApplication in 3.614 seconds (JVM running for 4.442)
+2025-05-06 22:31:37.229  INFO 19016 --- [RMI TCP Connection(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-05-06 22:31:37.229  INFO 19016 --- [RMI TCP Connection(8)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PAYMENT-SERVICE with eureka with status DOWN
+2025-05-06 22:31:37.229  INFO 19016 --- [RMI TCP Connection(8)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1746541897229, current=DOWN, previous=UP]
+2025-05-06 22:31:37.230 DEBUG 19016 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.discovery.InstanceInfoReplicator     : Executing on-demand update of local InstanceInfo
+2025-05-06 22:31:37.230 DEBUG 19016 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.discovery.InstanceInfoReplicator     : Canceling the latest scheduled update, it will be rescheduled at the end of on demand update
+2025-05-06 22:31:37.230  INFO 19016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/SABIR-HOME:PAYMENT-SERVICE:8990: registering service...
+2025-05-06 22:31:37.230 DEBUG 19016 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.shared.MonitoredConnectionManager  : Get connection: {}->http://localhost:8761, timeout = 5000
+2025-05-06 22:31:37.230 DEBUG 19016 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.shared.NamedConnectionPool         : [{}->http://localhost:8761] total kept alive: 1, total issued: 0, total allocated: 1 out of 200
+2025-05-06 22:31:37.231 DEBUG 19016 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.shared.NamedConnectionPool         : Getting free connection [{}->http://localhost:8761][null]
+2025-05-06 22:31:37.235  INFO 19016 --- [RMI TCP Connection(8)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-05-06 22:31:37.249 DEBUG 19016 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.shared.MonitoredConnectionManager  : Released connection is reusable.
+2025-05-06 22:31:37.249 DEBUG 19016 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.shared.NamedConnectionPool         : Releasing connection [{}->http://localhost:8761][null]
+2025-05-06 22:31:37.249 DEBUG 19016 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.shared.NamedConnectionPool         : Pooling connection [{}->http://localhost:8761][null]; keep alive for 60000 MILLISECONDS
+2025-05-06 22:31:37.249 DEBUG 19016 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.shared.NamedConnectionPool         : Notifying no-one, there are no waiting threads
+2025-05-06 22:31:37.249 DEBUG 19016 --- [DiscoveryClient-InstanceInfoReplicator-0] n.d.s.t.j.AbstractJerseyEurekaHttpClient : Jersey HTTP POST http://localhost:8761/eureka//apps/PAYMENT-SERVICE with instance SABIR-HOME:PAYMENT-SERVICE:8990; statusCode=204
+2025-05-06 22:31:37.249  INFO 19016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/SABIR-HOME:PAYMENT-SERVICE:8990 - registration status: 204
+2025-05-06 22:31:37.250  INFO 19016 --- [RMI TCP Connection(8)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-05-06 22:31:37.252 DEBUG 19016 --- [RMI TCP Connection(8)-127.0.0.1] c.n.d.shared.MonitoredConnectionManager  : Get connection: {}->http://localhost:8761, timeout = 5000
+2025-05-06 22:31:37.252 DEBUG 19016 --- [RMI TCP Connection(8)-127.0.0.1] c.n.d.shared.NamedConnectionPool         : [{}->http://localhost:8761] total kept alive: 1, total issued: 0, total allocated: 1 out of 200
+2025-05-06 22:31:37.252 DEBUG 19016 --- [RMI TCP Connection(8)-127.0.0.1] c.n.d.shared.NamedConnectionPool         : Getting free connection [{}->http://localhost:8761][null]
+2025-05-06 22:31:37.263 DEBUG 19016 --- [RMI TCP Connection(8)-127.0.0.1] c.n.d.shared.MonitoredConnectionManager  : Released connection is reusable.
+2025-05-06 22:31:37.263 DEBUG 19016 --- [RMI TCP Connection(8)-127.0.0.1] c.n.d.shared.NamedConnectionPool         : Releasing connection [{}->http://localhost:8761][null]
+2025-05-06 22:31:37.263 DEBUG 19016 --- [RMI TCP Connection(8)-127.0.0.1] c.n.d.shared.NamedConnectionPool         : Pooling connection [{}->http://localhost:8761][null]; keep alive for 60000 MILLISECONDS
+2025-05-06 22:31:37.263 DEBUG 19016 --- [RMI TCP Connection(8)-127.0.0.1] c.n.d.shared.NamedConnectionPool         : Notifying no-one, there are no waiting threads
+2025-05-06 22:31:37.263 DEBUG 19016 --- [RMI TCP Connection(8)-127.0.0.1] n.d.s.t.j.AbstractJerseyEurekaHttpClient : Jersey HTTP DELETE http://localhost:8761/eureka//apps/PAYMENT-SERVICE/SABIR-HOME:PAYMENT-SERVICE:8990; statusCode=200
+2025-05-06 22:31:37.263  INFO 19016 --- [RMI TCP Connection(8)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/SABIR-HOME:PAYMENT-SERVICE:8990 - deregister  status: 200
+2025-05-06 22:31:37.276 DEBUG 19016 --- [RMI TCP Connection(8)-127.0.0.1] c.n.d.shared.MonitoredConnectionManager  : Closing connections idle longer than 0 SECONDS
+2025-05-06 22:31:37.276 DEBUG 19016 --- [RMI TCP Connection(8)-127.0.0.1] c.n.d.shared.NamedConnectionPool         : Closing connections idle longer than 0 SECONDS
+2025-05-06 22:31:37.276 DEBUG 19016 --- [RMI TCP Connection(8)-127.0.0.1] c.n.d.shared.NamedConnectionPool         : Closing connection last used @ Tue May 06 22:31:37 SGT 2025
+2025-05-06 22:31:37.276 DEBUG 19016 --- [RMI TCP Connection(8)-127.0.0.1] c.n.d.shared.NamedConnectionPool         : Deleting connection [{}->http://localhost:8761][null]
+2025-05-06 22:31:37.276 DEBUG 19016 --- [RMI TCP Connection(8)-127.0.0.1] c.n.d.shared.MonitoredConnectionManager  : Shutting down
+2025-05-06 22:31:37.278  INFO 19016 --- [RMI TCP Connection(8)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-05-06 22:31:37.288  INFO 19016 --- [RMI TCP Connection(8)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
