@@ -1,5 +1,5 @@
 server:
-  port: 8987
+  port: 8083
 
 eureka:
   client:
@@ -17,3 +17,4 @@ logging:
       netflix:
         eureka: DEBUG
         discovery: DEBUG
+
