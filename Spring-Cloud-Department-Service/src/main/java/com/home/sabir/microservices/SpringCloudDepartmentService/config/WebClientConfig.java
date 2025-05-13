@@ -19,6 +19,7 @@ public class WebClientConfig {
 
 
     @Bean
+    @LoadBalanced
     public WebClient employeeWebClient() {
         return WebClient.builder()
                 .baseUrl("http://EMPLOYEE-SERVICE")
